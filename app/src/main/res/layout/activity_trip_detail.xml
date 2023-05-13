@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/Bmenu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_baseline_menu_24"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mumbai"
+        android:layout_marginBottom="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mumbai"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:drawableEnd="@drawable/ic_baseline_bookmark_border_24"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Below the snowline, Caradhras is described as having dull red slopes, 'as if stained with blood', which is perhaps the origin of its name."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"
+        />
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/Bbook"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_btn"
+        android:backgroundTint="@color/purple"
+        android:text="Book this Trip"
+        />
+
+    <!--
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/logout" />
+
+        <TextView
+            android:id="@+id/fetchResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/fetchUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fetch_user" />
+            -->
+
+</LinearLayout>

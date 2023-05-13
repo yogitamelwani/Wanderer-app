@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".profile"
+
+    tools:showIn="@layout/activity_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:padding="20dp"
+        >
+
+
+        <ImageButton
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/purple"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:src="@drawable/avatar8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:text="General Details"
+            android:textColor="@color/purple"
+            android:textSize="18sp"
+             />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edittext"
+            android:padding="20dp"
+            android:hint="FULL NAME"
+            android:textSize="15sp"
+            android:textColorHint="@color/purple"
+            android:layout_marginBottom="20dp"
+            />
+        <EditText
+            android:id="@+id/phn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edittext"
+            android:padding="20dp"
+            android:hint="PHONE NUMBER"
+            android:textSize="15sp"
+            android:textColorHint="@color/purple"
+            android:layout_marginBottom="10dp"
+            />
+        <EditText
+            android:id="@+id/addr"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edittext"
+            android:padding="20dp"
+            android:hint="PERMANENT ADDRESS"
+            android:textSize="15sp"
+            android:textColorHint="@color/purple"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="60dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/custom_edittext"
+                android:padding="20dp"
+                android:hint="DATE OF BIRTH"
+                android:textSize="15sp"
+                android:textColorHint="@color/purple"
+                android:layout_marginBottom="20dp"
+                />
+            <EditText
+                android:layout_weight="50"
+                android:layout_marginStart="6dp"
+                android:id="@+id/gender"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_edittext"
+                android:padding="20dp"
+                android:hint="GENDER"
+                android:textSize="15sp"
+                android:textColorHint="@color/purple"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/status"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/custom_edittext"
+                android:padding="20dp"
+                android:hint="MARITIAL STATUS"
+                android:textSize="15sp"
+                android:textColorHint="@color/purple"
+                android:layout_marginBottom="20dp"
+                />
+            <EditText
+                android:id="@+id/anniversary"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/custom_edittext"
+                android:padding="20dp"
+                android:hint="ANNIVERSARY DATE"
+                android:textColorHint="@color/purple"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/nationality"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edittext"
+            android:padding="20dp"
+            android:hint="NATIONALITY"
+            android:textSize="15sp"
+            android:textColorHint="@color/purple"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+
+            android:text="Adding your nationality helps in booking a flight faster."
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/submit"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_btn"
+            android:backgroundTint="@color/purple"
+            android:text="@string/submit"
+            />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
