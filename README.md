@@ -1,7 +1,4 @@
 # Wanderer-app
-/* NOTE: To ensure you get the most out of the source code, be sure to read this file and
- check the screenshots in the Screenshots folder for a better view of the app.
- */
 
 Project Title: Wanderer: A Travel Booking System 
 <br>Owner: Yogita Melwani
